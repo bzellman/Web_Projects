@@ -1,0 +1,27 @@
+#container{
+	background-color: blue;
+	padding: 10px ;
+}
+
+#userSettings{
+	margin: auto;
+	width: 200px;
+}
+
+
+.mainTable{
+	background-color: white;
+	margin: auto;
+	border-collapse: collapse
+}
+
+
+td{
+	height: 100px;
+	width: 100px;
+	background-color: black;
+}
+
+h1 {
+	color: red;
+}

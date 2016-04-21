@@ -1,0 +1,13 @@
+.grid{
+	width: 50px;
+	height: 50px;
+	border-color: blue;
+	border-width: 5px;
+	float: center;
+	margin: auto;
+	background-color: black;
+}
+
+h1 {
+	color: blue;
+}
