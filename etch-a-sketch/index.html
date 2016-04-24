@@ -5,44 +5,24 @@
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 	<script src="script.js"></script>
 	<link rel="stylesheet" type="text/css" href="style.css">
-
 </head>
 <body>
 	<div id='container'>
 		<div id='userSettings'>
 			<h1>Welcome to "My Grid"</h1>
 			<form>
-				<input id='gridSizeValue' type='text' name="gridSize">
-				<input id='button' type='button' value="Change Grid Size">
+				<div id="gridSizeText">
+					<input id='gridSizeValue' type='text' name="gridSize">
+				</div>
+				<div id='formActions'>
+					<input id='gridButton' type='button' value="Change Grid Size">
+					<input id='colorButton' type='button' value="Random Colors">
+					<input id='trailButton' type='button' value="Trail Effect">
+					<input id='resetButton' type='button' value="Reset Settings">
+				</div>
 			</form>
 		</div>
 		<div class="tableDiv">
-		<table class='mainTable' style="border-color: black; border-top-width: 5px;">
-			<tr class="tableRow">
-				<td class="tableColumn">
-				<td class="tableColumn">
-				<td class="tableColumn">
-				<td class="tableColumn">
-			</tr>
-			<tr class="tableRow">
-				<td class="tableColumn">
-				<td class="tableColumn">
-				<td class="tableColumn">
-				<td class="tableColumn">
-			</tr>
-			<tr class="tableRow">
-				<td class="tableColumn">
-				<td class="tableColumn">
-				<td class="tableColumn">
-				<td class="tableColumn">
-			</tr>
-			<tr class="tableRow">
-				<td class="tableColumn">
-				<td class="tableColumn">
-				<td class="tableColumn">
-				<td class="tableColumn">
-			</tr>
-		</table>
 		</div>
 	</div>
 </body>

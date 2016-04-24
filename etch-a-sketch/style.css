@@ -1,29 +1,45 @@
-#container{
-	/*background-color: blue;*/
-	padding: 10px ;
-}
-
 #userSettings{
 	margin: auto;
-	width: 200px;
+	padding: 10px 0px 10px 0px;
 }
 
+#formActions{
+    margin: 0;
+    background-color: transparent;
+    text-align: center;
+}
+#gridSizeText{
+	margin: 0;
+    background-color: transparent;
+    text-align: center;
+}
+
+#gridSizeValue{
+	width: auto;
+}
 
 .mainTable{
-	background-color: white;
+	background-color: black;
 	margin: auto;
 	border-color: black;
-	border-width: 5px;
-	/*border-collapse: collapse*/
+	border-width: 4px;
 }
 
-
 td{
-	height: 100px;
-	width: 100px;
-	background-color: black;
+	background-color: white;
 }
 
 h1 {
-	color: red;
+	text-align: center;
+	color: black;
+	font-family: Lato;
+}
+
+#gridButton, #colorButton, #resetButton, #trailButton{
+	width: 125px;
+}
+
+#gridButton, #colorButton {
+	margin-top: 10px;
+	margin-right: 10px;
 }
