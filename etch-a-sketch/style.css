@@ -15,7 +15,8 @@
 }
 
 #gridSizeValue{
-	width: auto;
+	width: 250px;
+	text-align: center;	
 }
 
 .mainTable{
@@ -31,6 +32,13 @@ td{
 
 h1 {
 	text-align: center;
+	color: black;
+	font-family: Lato;
+}
+
+h2{
+	text-align: center;
+	font-size: 1em;
 	color: black;
 	font-family: Lato;
 }

@@ -1,5 +1,6 @@
 var colorToggle = false; 
 var trailToggle = false;
+
 $(document).ready(function(){
 	drawNewTable(16);
 	$('#gridButton').click(function(){
@@ -30,6 +31,8 @@ $(document).ready(function(){
 		colorToggle = false;
 		$('#trailButton').attr('value', 'Trail Effect');
 		trailToggle = false;
+		$('#gridSizeValue').attr('placeholder', 'Enter A Number Less Than 80');
+		$('#gridSizeValue').attr('value', '');
 		drawNewTable(16);
 		styleTable();
 	});		
