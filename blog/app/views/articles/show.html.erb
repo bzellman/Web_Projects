@@ -1,14 +1,28 @@
-<p>
+<h1>
     <strong>Title:</strong>
     <%= @article.title %>
+</h1>
+
+<p>
+	Tags:
+	<% @article.tags.each do |tag| %>
+		<%= link_to tag.name, tag_path(tag) %>
+	<% end %>
 </p>
 
+
+<p>
+	<% if @article.image.exists? %>
+		<%= image_tag @article.image.url %>
+	<% end %>
+</p>
 <p>
     <strong>Text:</strong>
     <%= @article.text %>
 </p>
 
-<h2>Comments</h2>
+<h3>Comments: <%= @article.comments.size %></h3>
+
 <%= render @article.comments %>
 
 <h2>Add a comment:</h2>
