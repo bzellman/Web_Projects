@@ -72,11 +72,49 @@ def my_count
 end
 
 # def my_map
-	
+# 	array = []
+# 	if block_given?
+# 		self.my_each do |i|
+# 			array << yield(i)
+# 		end
+# 	end
+# 	return array
 # end
 
-# def my_inject
-	
-# end
+## my_map with a Proc
+def my_map(&proc)
+	array = []
+	if block_given?
+		self.my_each do |i|
+			array << proc.call(i)
+		end
+	end
+	return array
+end
+
+
+def my_inject
+	result = nil
+	if block_given?
+		self.my_each do |i|
+			if result == nil
+				result = i
+			else
+				result = yield(result, i)
+			end
+		end
+	end
+	return result	
+end
 
 end
+
+
+
+def multiply_els(array_to_multiply)
+	return array_to_multiply.my_inject { |running_total, current_item| running_total * current_item}
+end
+
+
+
+
