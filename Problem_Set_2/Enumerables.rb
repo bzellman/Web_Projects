@@ -114,10 +114,3 @@ end
 def multiply_els(array_to_multiply)
 	return array_to_multiply.my_inject { |running_total, current_item| running_total * current_item}
 end
-
-def multiply_els(array_to_multiply)
-	return array_to_multiply.my_inject { |running_total, current_item| running_total * current_item}
-end
-
-
-
