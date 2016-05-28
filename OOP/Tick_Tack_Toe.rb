@@ -6,6 +6,17 @@ class Game
 		set_new_game
 	end
 
+	def get_input
+		input = gets.chomp
+		if input == "--r"
+			set_new_game
+		elsif input == "--q"
+			abort
+		else
+			return input
+		end
+	end
+
 	def set_new_game
 		@won = false
 		@open = " "
@@ -16,6 +27,8 @@ class Game
 
 	def start_game
 		puts "\n**** New Game Comencing ****"
+		puts "\n-type --r to rest game at any time"
+		puts "-type --q to quit"
 		player_one = Player.new("X", "1")
 		player_two = Player.new("O", "2")
 		puts "\nPlayer 1 is: #{player_one.symbol}"
@@ -38,7 +51,7 @@ class Game
 			puts @@legal_moves.count
 			puts @@spaces.count
 			puts "Player #{player.num}: Choose A Square"
-			player_move = gets.chomp
+			player_move = get_input
 			player_move = player_move.downcase
 			is_Valid = validate_move(player_move, player)	
 			check_won(player)
