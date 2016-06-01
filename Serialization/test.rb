@@ -7,16 +7,19 @@ require 'rubygems'
 # File.open(wiki_local_name, "w") { |file| file.write(RestClient.get(wiki_url)) }
 
 require 'open-uri'
+require 'rest-client'
+url = "http://tutorials.jumpstartlab.com/projects/event_attendees.csv"
 
-url = "http://ruby.bastardsbook.com/files/fundamentals/hamlet.txt"
-puts open(url).read
+File.open("small_sample.txt", "w") { |file| file.write(RestClient.get(url)) }
 
-file = File.open("hamlet.txt", "w") { |f| f.write(open(url).read)}
+# url = "http://ruby.bastardsbook.com/files/fundamentals/hamlet.txt"
+# puts open(url).read
+# file = File.open("hamlet.txt", "w") { |f| f.write(open(url).read)}
 
-File.open("hamlet.txt", "r") do |file|
-	file.readlines.each_with_index do |line, index|
-		if index % 42 == 0
-			puts line
-		end
-	end
-end
+# File.open("hamlet.txt", "r") do |file|
+# 	file.readlines.each_with_index do |line, index|
+# 		if index % 42 == 0
+# 			puts line
+# 		end
+# 	end
+# end

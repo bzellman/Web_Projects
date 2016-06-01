@@ -1,0 +1,10 @@
+---
+guessed_letters:
+- a
+- b
+- e
+- r
+word: werwolf
+missed_letters:
+- a
+- b
