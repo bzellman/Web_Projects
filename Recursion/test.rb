@@ -1,11 +1,3 @@
-# def append(ary, n)
-#   puts "ary: #{ary}"
-#   puts n
-#   return ary if n == 0
-#   ary << n
-#   append(ary, n-1)
-# end
-
 def fibs(n)
   array = [1]
   n.times do |i|
